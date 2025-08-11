@@ -80,7 +80,6 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 - Real-time price fetching from major grocery sites was inconsistent due to anti-scraping measures — pivoted to store URL retrieval only.
 - USDA API integration provides accurate, credible nutrition data.
 
----
 
 ### Future Work
 - Integrate cost estimation by scraping prices where possible.
@@ -88,7 +87,6 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 - Build a front-end interface for non-technical users.
 - Add recipe image generation using an image model.
 
----
 
 ## How to Reproduce Results
 
@@ -105,14 +103,12 @@ The approach integrates **natural language generation**, **ingredient parsing**,
    ```
 5. Enter your pantry items and see generated results.
 
----
+
 
 ### Overview of Files in Repository
 
 - **Final LLM.ipynb** - Project code
 - **README.md** - Project documentation.
-
----
 
 ### Software Setup
 
@@ -121,19 +117,17 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 pip install transformers google-api-python-client fuzzywuzzy python-dotenv requests
 ```
 
----
+
 
 ### Data
 
 - **USDA FoodData Central API** — [https://fdc.nal.usda.gov/api-guide.html](https://fdc.nal.usda.gov/api-guide.html)  
 - **Google Custom Search API** — [https://developers.google.com/custom-search/v1/overview](https://developers.google.com/custom-search/v1/overview)
 
----
 
 ### Training
 - No training required — inference-only.
 
----
 
 #### Performance Evaluation
 - Evaluate by running multiple ingredient inputs and verifying:
@@ -142,9 +136,7 @@ pip install transformers google-api-python-client fuzzywuzzy python-dotenv reque
   - Relevance of store URLs.
   - Accuracy of USDA macro data.
 
----
 
 ## Citations
-- Devlin, J., et al. (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.*
 - USDA FoodData Central. [https://fdc.nal.usda.gov](https://fdc.nal.usda.gov)
 - Google Custom Search API. [https://developers.google.com/custom-search](https://developers.google.com/custom-search)
