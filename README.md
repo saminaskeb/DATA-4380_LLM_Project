@@ -1,8 +1,7 @@
+![](UTA-DataScience-Logo.png)
 # GPT, Just Tell Me What to Eat
 
 * This repository contains an AI-powered meal planning assistant that takes user-input ingredients, generates vegan recipes, identifies missing ingredients, and fetches store URLs plus USDA nutrition information.
-
-
 
 ## Overview
 
@@ -117,17 +116,13 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 pip install transformers google-api-python-client fuzzywuzzy python-dotenv requests
 ```
 
-
-
 ### Data
 
 - **USDA FoodData Central API** — [https://fdc.nal.usda.gov/api-guide.html](https://fdc.nal.usda.gov/api-guide.html)  
 - **Google Custom Search API** — [https://developers.google.com/custom-search/v1/overview](https://developers.google.com/custom-search/v1/overview)
 
-
 ### Training
 - No training required — inference-only.
-
 
 #### Performance Evaluation
 - Evaluate by running multiple ingredient inputs and verifying:
