@@ -2,7 +2,7 @@
 
 * This repository contains an AI-powered meal planning assistant that takes user-input ingredients, generates vegan recipes, identifies missing ingredients, and fetches store URLs plus USDA nutrition information.
 
----
+
 
 ## Overview
 
@@ -14,7 +14,6 @@ From the generated recipe, the system determines which ingredients are missing a
 
 The approach integrates **natural language generation**, **ingredient parsing**, **store link retrieval**, and **nutrition data scraping** into a single automated workflow.
 
----
 
 ## Summary of Work Done
 
@@ -35,19 +34,17 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 **Data Size:**
 - No large training dataset — this is an inference-only LLM application using live API queries.
 
----
+
 
 #### Preprocessing / Clean-up
 - Recipe text normalization to ensure ingredient parsing works reliably (line breaks before each “- ” and section header).
 - Removal of truncated or incomplete instruction sections (optional mode).
 - String cleaning to improve fuzzy matching between user pantry items and recipe ingredients.
 
----
 
 #### Data Visualization
 - N/A for now — could later add plots comparing macros of selected recipes or cost breakdown per meal.
 
----
 
 ### Problem Formulation
 
@@ -60,13 +57,13 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 
 **Loss / Optimizer:** N/A — this is an inference-only project.
 
----
+
 
 ### Training
 - No model training performed — system relies on pre-trained LLM.
 - Fine-tuning potential exists for recipe style/format consistency.
 
----
+
 
 ### Performance Comparison
 - Performance is evaluated on:
@@ -75,7 +72,7 @@ The approach integrates **natural language generation**, **ingredient parsing**,
   - Accuracy of USDA macro retrieval.
 - Manual testing was used to verify outputs.
 
----
+
 
 ### Conclusions
 - LLM-based recipe generation works well for diverse input ingredients.
@@ -112,13 +109,8 @@ The approach integrates **natural language generation**, **ingredient parsing**,
 
 ### Overview of Files in Repository
 
-- **main.py** → Main execution script for the workflow.
-- **llm_recipe.py** → Generates recipe text using LLM.
-- **ingredient_parser.py** → Parses ingredients from generated recipe.
-- **store_search.py** → Queries Google CSE for store URLs.
-- **usda_nutrition.py** → Retrieves nutrition data from USDA API.
-- **utils.py** → Helper functions for string cleaning and fuzzy matching.
-- **README.md** → Project documentation.
+- **Final LLM.ipynb** - Project code
+- **README.md** - Project documentation.
 
 ---
 
